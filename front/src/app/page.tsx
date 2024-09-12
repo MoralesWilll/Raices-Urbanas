@@ -102,8 +102,7 @@ const HomePage: React.FC = () => {
       {/*---------------SECTION ICONS CUSTOMERS---------------- */}
       <section className="h-60 w-100 p-5 flex flex-row flex-nowrap justify-around align-around bg-[#003C71] mb-10 mt-40">
         <div className="w-1/4 h-full flex justify-center items-center flex-col text-center">
-          <img
-            src="/acces/icons/arrendatario.png"
+          <img src="/acces/icons/arrendatario.png"
             alt="arrendatario"
             className="h-3/5 cursor-pointer"
           />
@@ -160,7 +159,7 @@ const HomePage: React.FC = () => {
               </h4>
               <div className="flex flex-row justify-around items-center w-full p-1">
                 <p className="font-bold">Precio</p>
-                <p className="bg-[#ffffff58] p-1 rounded-md">2'000.000</p>
+                <p className="bg-[#ffffff58] p-1 rounded-md">2.000.000</p>
               </div>
               <div className=" flex p-5 text-center text-xs">
                 <div className="flex flex-col w-2/6">
@@ -198,7 +197,7 @@ const HomePage: React.FC = () => {
               </h4>
               <div className="flex flex-row justify-around items-center w-full p-1">
                 <p className="font-bold">Precio</p>
-                <p className="bg-[#ffffff58] p-1 rounded-md">2'000.000</p>
+                <p className="bg-[#ffffff58] p-1 rounded-md">2.000.000</p>
               </div>
               <div className=" flex p-5 text-center text-xs">
                 <div className="flex flex-col w-2/6">
@@ -236,7 +235,7 @@ const HomePage: React.FC = () => {
               </h4>
               <div className="flex flex-row justify-around items-center w-full p-1">
                 <p className="font-bold">Precio</p>
-                <p className="bg-[#ffffff58] p-1 rounded-md">2'000.000</p>
+                <p className="bg-[#ffffff58] p-1 rounded-md">2.000.000</p>
               </div>
               <div className=" flex p-5 text-center text-xs">
                 <div className="flex flex-col w-2/6">
