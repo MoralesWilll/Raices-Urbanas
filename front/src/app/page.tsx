@@ -34,15 +34,18 @@ const MainSection = styled.section`
 `;
 
 const TitleH1 = styled.h1`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   font-size: 10rem;
   color: #003c71;
-  height: 11rem;
+  height: 10rem;
   width: 100%;
 
   @media (max-width: ${breakpoints.mobile}) {
     font-size: 4rem;
     height: auto;
-    text-align: center;
+    text-align: left;
   }
 `;
 
@@ -53,11 +56,14 @@ const Subtitle = styled.h2`
 
   @media (max-width: ${breakpoints.mobile}) {
     font-size: 2rem;
-    text-align: center;
+    text-align: left;
   }
 `;
 
 const Button = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px 20px;
   background-color: #ffffff44;
   color: white;
@@ -65,7 +71,7 @@ const Button = styled.button`
   border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
-
+  width: 30%;
   &:hover {
     background: linear-gradient(
       45deg,
@@ -73,10 +79,12 @@ const Button = styled.button`
       rgba(0, 60, 112, 1) 29%,
       rgba(123, 174, 219, 1) 80%
     );
+    font-weight: bold;
   }
 
   @media (max-width: ${breakpoints.mobile}) {
-    width: 100%;
+    width: 150px;
+    height: 50px;
     padding: 15px 0;
     font-size: 1.2rem;
   }
@@ -142,7 +150,7 @@ const HomePage: React.FC = () => {
         {/*---------------NAV---------------- */}
         <Nav />
         {/*---------------SECTION HERO---------------- */}
-        <div className="ml-5">
+        <div className="ml-5 flex flex-col justify-stretch">
           <TitleH1 className="xs: text-xs">Medellín</TitleH1>
           <Subtitle>Un lugar para vivir</Subtitle>
           <Button>Conoce más</Button>
@@ -160,8 +168,7 @@ const HomePage: React.FC = () => {
         </div>
         <div className="bg-gradient-to-r from-[#020024] via-[#003C70] to-[#7BAEDB] h-full w-full flex flex-col justify-center items-center p-5 ">
           <div className="text-white text-5xl font-bold">
-            <h2 className="text-center">Escoge una opción
-            </h2>
+            <h2 className="text-center">Escoge una opción</h2>
           </div>
           <div className="w-full h-max flex flex-row justify-around items-center p-5">
             <div className="w-1/4 h-full  flex justify-center items-center flex-col text-center hover:border-2 border-white rounded-lg">
@@ -195,7 +202,6 @@ const HomePage: React.FC = () => {
               </h4>
             </div>
           </div>
-
         </div>
       </section>
       {/*---------------SECTION TARGETS "DESTACADOS"---------------- */}
@@ -228,7 +234,7 @@ const HomePage: React.FC = () => {
         </div>
       </section>
       {/*---------------TECNOLOGYS---------------- */}
-      <section className="section-tecnologys flex w-full h-screen p-5 justify-around items-center gap-20 mt-40 ">
+      <section className="section-tecnologys flex w-full h-max p-5 justify-around items-center gap-20 mt-40 ">
         <div className=" flex justify-center w-2/12 h-40 ">
           <img
             src="/assets/img/nextjs_logo.png"

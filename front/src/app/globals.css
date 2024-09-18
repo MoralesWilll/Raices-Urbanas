@@ -23,9 +23,10 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-/* *{
+*{
   border: solid 0.5px blue;
-} */
+  font-family:sans-serif;
+}
 
 html {
   margin: 0;
@@ -59,8 +60,6 @@ body {
 .bg-custom-gradient {
   background: linear-gradient(45deg, rgba(2, 0, 36, 1) 0%, rgba(0, 60, 112, 1) 29%, rgba(123, 174, 219, 1) 80%);
 }
-
-
 
 .button-know-home {
  border-color: #003C71;

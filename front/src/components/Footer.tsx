@@ -10,7 +10,13 @@ const Footer = styled.footer`
   gap: 2.5rem;
   text-align: left;
   margin-top: 10rem;
-  box-shadow: inset 0 2px 3px #003c7146;
+  box-shadow: inset 0 1px 2px #003c7146;
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 60, 112, 0.4581578286846032) 0%,
+    rgba(255, 255, 255, 1) 53%
+  );
 
   @media (max-width: 768px) {
     flex-direction: column;

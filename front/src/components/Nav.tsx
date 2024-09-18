@@ -33,7 +33,7 @@ export const Menu = styled.ul<{ open: boolean }>`
     justify-content: center;
     align-items: center;
     gap: 10px;
-    width:fit-content;
+    width: fit-content;
     ${({ open }) =>
       open
         ? "display: flex;"
@@ -44,7 +44,10 @@ export const Menu = styled.ul<{ open: boolean }>`
 export const MenuItem = styled.li`
   cursor: pointer;
   &:hover {
-    text-decoration: underline;
+    background-color: #ffffff6e;
+    font-weight: bold;
+    border-radius: 5%;
+    padding: 3px;
   }
 `;
 
@@ -52,13 +55,17 @@ export const Button = styled.button`
   padding: 10px 20px;
   background-color: #ffffff44;
   color: white;
-  border: solid white 1px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
   font-weight: bold;
   &:hover {
-    background-color: #003c71;
+    background: linear-gradient(
+      45deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(0, 60, 112, 1) 29%,
+      rgba(123, 174, 219, 1) 80%
+    );
   }
 `;
 
