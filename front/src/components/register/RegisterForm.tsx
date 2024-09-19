@@ -17,6 +17,7 @@ import { colors } from "@/app/GlobalStyles"
 import { FaEye, FaEyeSlash } from "react-icons/fa"
 import { alertSuccess } from "@/components/alerts/Alerts.component"
 import { useRouter } from "next/navigation"
+import { validateEmail } from "@/utils/validators"
 
 const initialState: UserData = {
     username: "",
@@ -45,6 +46,12 @@ const Register: React.FC = () => {
         e.preventDefault()
         setError("")
         setIsLoading(true)
+
+        if (!validateEmail(user.email)) {
+            setError("El email ingresado no es válido")
+            setIsLoading(false)
+            return
+        }
         
         try {
             const data = await register(user)
@@ -132,7 +139,7 @@ const Register: React.FC = () => {
                         />
                     </InputContent>
 
-                    {error && <p>{error}</p>}
+                    {error && <p className="error-message">{error}</p>}
                     <Button type="submit" disabled={ user.email === "" || user.username === "" || user.password === "" || user.role === ""} $bgColor={colors.white}>
                         {isLoading ? (
                             <Loader />

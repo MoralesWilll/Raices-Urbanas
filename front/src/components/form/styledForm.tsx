@@ -94,8 +94,9 @@ export const InputContent = styled.div`
 `
 
 export const TextError = styled.span`
-    display: block;
-    color: red;
+    background-color: red;
+    color: white;
     text-align: center;
-    padding: 5px;
+    padding: 0.75rem;
+    border-radius: 4px;
 `

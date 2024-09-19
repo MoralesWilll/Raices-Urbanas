@@ -36,6 +36,13 @@ body {
   margin: 0;
 }
 
+.error-message {
+  background-color: red;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 4px;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

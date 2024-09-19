@@ -14,6 +14,7 @@ import Link from "next/link"
 import { colors } from "@/app/GlobalStyles"
 import { FaEye, FaEyeSlash } from "react-icons/fa"
 import { login } from "@/api/auth"
+import { validateEmail } from "@/utils/validators"
 
 
 const initialState: UserLogin = {
@@ -36,6 +37,12 @@ const Login: React.FC = () => {
         e.preventDefault()
         setError("")
         setIsLoading(true)
+
+        if (!validateEmail(user.username)) {
+            setError("Ingrese un correo electrónico válido")
+            setIsLoading(false)
+            return
+        }
 
         try {
             const userData = await login(user)
