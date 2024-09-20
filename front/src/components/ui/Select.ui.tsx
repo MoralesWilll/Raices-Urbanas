@@ -1,7 +1,7 @@
 'use client'
 import React from "react"
 import styled from "styled-components"
-import { colors } from "@/app/GlobalStyles"
+import { colors } from "../../app/GlobalStyles"
 
 interface SelectProps extends StylesProps {
     id: string

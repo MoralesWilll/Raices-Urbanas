@@ -206,10 +206,10 @@ const Card: React.FC = () => (
             padding: "0.75rem",
           }}
         >
-          <Link href="/pages/details-propieties" className="w-2/6">
+          <Link href="/pages/details-property" className="w-2/6 no-underline">
             <Button>Ver</Button>
           </Link>
-          <Link href="/pages/details-propieties" className="w-2/6">
+          <Link href="/pages/edit-propiety" className="w-2/6 no-underline">
             <Button>Editar</Button>
           </Link>
         </div>

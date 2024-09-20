@@ -1,20 +1,19 @@
 "use client";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import Nav from "../../../components/Nav";
 import FooterPage from "../../../components/Footer";
 import Link from "next/link";
+import { useEffect } from "react";
 
-<<<<<<< HEAD:front/src/app/pages/details-propieties/page.tsx
 export const DetailsPropiety: React.FC = () => {
-  
-=======
-const DetailsPropiety: React.FC = () => {
+
   useEffect(() => {
     // Importar el JavaScript de Bootstrap después del renderizado del cliente
     require("bootstrap/dist/js/bootstrap.bundle.min.js");
   }, []);
 
->>>>>>> dev-front:front/src/app/pages/details-property/page.tsx
+
   return (
     <>
       <div className="bg-[#003C71]">

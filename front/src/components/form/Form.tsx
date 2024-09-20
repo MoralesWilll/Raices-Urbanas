@@ -1,6 +1,6 @@
 'use client'
-import { FormContent } from "@/components/form/styledForm";
-import { colors } from "@/app/GlobalStyles";
+import { FormContent } from "../form/styledForm";
+import { colors } from "../../app/GlobalStyles"
 
 interface FormProps {
     onSubmit: (e: React.FormEvent<HTMLFormElement>) => void;

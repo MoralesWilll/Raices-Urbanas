@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Nav from "../components/Nav";
 import FooterPage from "../components/Footer";
 import Card from "../components/Cards";
+
 //HERO
 const breakpoints = {
   mobile: "768px", // Puedes ajustar el valor según tus necesidades

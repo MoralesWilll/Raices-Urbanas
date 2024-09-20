@@ -1,5 +1,5 @@
-import { apiUrl } from "@/api/apiUrl";
-import { UserData } from "@/interfaces/IDataUser";
+import { apiUrl } from "./apiUrl";
+import { UserData } from "../interfaces/IDataUser";
 
 export const register = async (user: UserData): Promise<UserData> => {
     try {

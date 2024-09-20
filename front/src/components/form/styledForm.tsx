@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "@/app/GlobalStyles";
+import { colors } from "../../app/GlobalStyles"
 
 interface StyledContainerProps {
     display?: string;
